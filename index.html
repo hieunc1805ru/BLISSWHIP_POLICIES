@@ -96,7 +96,7 @@ nav ul li a:hover {
     url('https://cdn.bitrix24.com/b28854747/landing/060/0601069d36d856c3324051834ffd175d/bw3_1x.png'),
     url('https://cdn.bitrix24.com/b28854747/landing/3eb/3eb69b10cbccbeeff6a3cb5583eb7707/bw4_1x.png');
 
-    
+
   background-repeat: no-repeat;
   background-size: 100vw 100%;
   background-position:
@@ -185,7 +185,7 @@ nav ul li a:hover {
   background: lightgreen;
   background-size: cover;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -193,6 +193,7 @@ nav ul li a:hover {
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background: #fff;
 }
 
 .card h3 {
@@ -203,6 +204,63 @@ nav ul li a:hover {
 .card ul {
   margin-top: 10px;
   padding-left: 18px;
+}
+
+/* ================= SAFETY / AGE RESTRICTION / PROP 65 (NEW - US MARKET) ================= */
+.safety-card {
+  grid-column: 1 / -1;
+  background: #fff8f2;
+  border: 3px solid #ff6f00;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.safety-card h3 {
+  color: #c62828;
+}
+
+.safety-card h4 {
+  color: #b34700;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.safety-card ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.age-badge {
+  display: inline-block;
+  background: #c62828;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.prop65-box {
+  background: #fff8e1;
+  border-left: 5px solid #f9a825;
+  padding: 16px 20px;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.prop65-box a {
+  color: #b34700;
+  text-decoration: underline;
+}
+
+.state-note {
+  background: #f1f8ff;
+  border-left: 5px solid #1976d2;
+  padding: 16px 20px;
+  margin-top: 18px;
 }
 
 /* ================= QUALITY COMMITMENT ================= */
@@ -488,9 +546,10 @@ body::-webkit-scrollbar {
   <div class="container header-content">
    <a href="https://www.theblisswhip.com/"><div class="logo">
       <img src="https://cdn.bitrix24.com/b28854747/landing/be7/be7f7bc645afb988ae6132a1aced42ea/logo_1x.png">
-    </div> </a> 
+    </div> </a>
     <nav>
       <ul>
+        <li><a href="#safety-notice">Safety &amp; Age Restriction</a></li>
         <li><a href="https://www.theblisswhip.com/">Back to Homepage</a></li>
       </ul>
     </nav>
@@ -511,7 +570,53 @@ body::-webkit-scrollbar {
   <div class="container">
     <h2 style="color: purple">OUR POLICIES</h2>
     <div class="product-cards">
-      <div class="card">
+
+      <!-- ============ NEW: SAFETY, AGE RESTRICTION & PROP 65 NOTICE (US MARKET) ============ -->
+      <div class="card safety-card" id="safety-notice">
+
+        <span class="age-badge">MUST BE 18+ TO PURCHASE</span>
+
+        <h3>SAFETY, AGE RESTRICTION &amp; LEGAL NOTICE</h3>
+        <p>BlissWhip cream chargers are food-grade nitrous oxide (N2O) products intended <strong>exclusively for culinary use</strong> — whipping cream, foams, espumas, and other food and beverage preparation. They are <strong>not intended for medical, recreational, or industrial inhalation purposes</strong>.</p>
+
+        <h4>Age Restriction</h4>
+        <ul>
+          <li>You must be at least <strong>18 years of age</strong> to purchase this product.</li>
+          <li>Some states impose stricter requirements — for example, <strong>New York requires purchasers to be 21 years of age or older</strong> (NY General Business Law § 399-hh).</li>
+          <li>Retailers and distributors reselling this product are responsible for verifying the age of their own customers in accordance with applicable state law.</li>
+        </ul>
+
+        <h4>State-Specific Restrictions</h4>
+        <div class="state-note">
+          <p>Several U.S. states have enacted additional restrictions on the sale of nitrous oxide chargers, including but not limited to:</p>
+          <ul>
+            <li><strong>California, Illinois &amp; Michigan</strong> — additional purchaser information/documentation may be required at checkout to comply with California Penal Code §381e, Illinois Criminal Code 1961 Article 24.5, and Michigan Penal Code §752.272a.</li>
+            <li><strong>New York</strong> — purchasers must be 21 years of age or older.</li>
+            <li><strong>Oregon</strong> — retail sale prohibited to individuals under 18 years of age (ORS 475.390).</li>
+            <li><strong>South Carolina</strong> — sale prohibited to individuals under 18 years of age; sale of flavored nitrous oxide products is prohibited.</li>
+            <li><strong>Wisconsin</strong> — retail sale of more than 24 cartridges in a single transaction is prohibited (Wis. Stat. §134.63).</li>
+          </ul>
+          <p style="margin-top:10px;">It is the buyer's sole responsibility to know and comply with the laws of their state and locality before purchasing. BlissWhip reserves the right to refuse any order that does not comply with applicable law.</p>
+        </div>
+
+        <h4>Health &amp; Safety Warnings</h4>
+        <p><strong>Failure to follow these instructions may result in serious permanent injury or death.</strong></p>
+        <ul>
+          <li>Inhalation of nitrous oxide is known to cause addiction, damage to the central nervous system, paralysis, or death. It is a violation of state law to possess nitrous oxide, or any product containing nitrous oxide, with the intent to inhale or ingest it for the purpose of intoxication.</li>
+          <li>Not for sale to anyone under 18 years of age, or to anyone suspected of intending to misuse the product.</li>
+          <li>N2O cartridges are for food and beverage preparation only.</li>
+          <li>Do not incinerate, expose to sun or heat, or store above 120°F / 50°C. Store in a cool, dry place, out of reach of children.</li>
+          <li>Symptoms associated with inhalant misuse may include abnormal blood counts, asphyxiation, blood clots, frostbite, headache, impaired bowel and bladder function, lightheadedness, limb weakness, loss of consciousness, numbness, palpitations, paralysis, psychiatric disturbances, tingling, difficulty walking, vitamin B12 deficiency, and in severe cases, death. Regular misuse can lead to lasting neurological damage, including spinal cord or brain injury.</li>
+        </ul>
+
+        <div class="prop65-box">
+          ⚠️ <strong>California Proposition 65 Warning:</strong> This product contains nitrous oxide, a chemical known to the State of California to cause birth defects or other reproductive harm. For more information, visit <a href="https://www.p65warnings.ca.gov" target="_blank" rel="noopener">www.P65Warnings.ca.gov</a>.
+        </div>
+
+      </div>
+      <!-- ============ END NEW SAFETY SECTION ============ -->
+
+      <div class="card" style="grid-column: 1 / -1;">
 
 <h3>PRIVACY POLICY</h3>
 <p>BlissWhip ("BlissWhip," "Company," "we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us.</p>
@@ -613,11 +718,9 @@ window.addEventListener("scroll", function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop && scrollTop > 150) {
-    // Scroll xuống -> Ẩn header + footer
     header.classList.add("hide-header");
     footer.classList.add("hide-footer");
   } else {
-    // Scroll lên -> Hiện header + footer
     header.classList.remove("hide-header");
     footer.classList.remove("hide-footer");
   }
@@ -632,5 +735,3 @@ document.getElementById("year").textContent = new Date().getFullYear();
 <script src="https://blisswhip-chatbot.vercel.app/widget.js" defer></script>
 </body>
 </html>
-
-
